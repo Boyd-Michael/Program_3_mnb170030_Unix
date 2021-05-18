@@ -1,0 +1,17 @@
+# Gawk Code
+# March 1 2020
+# Michael Boyd
+# mnb170030@utdallas.edu
+# CS 3377.501 Spring 2020
+# Version 1.0
+# Copyright All Rights Reserved
+#
+# To add the 1st and 4th columns in a txt file
+#
+
+BEGIN {mySum1 = 0; mySum2 = 0;}
+
+{mySum1+=$1;}
+{mySum2+=$4;}
+
+END {printf mySum1 " "  mySum2 "\n";}
